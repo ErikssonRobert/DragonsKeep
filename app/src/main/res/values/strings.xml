@@ -3,4 +3,5 @@
     <string name="playBtn">Play</string>
     <string name="optionsBtn">Options</string>
     <string name="exitBtn">exit</string>
+    <string name="headlineText">Dragons keep</string>
 </resources>
