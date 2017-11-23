@@ -30,6 +30,7 @@
     <Button
         android:id="@+id/playButton"
         android:text="@string/playBtn"
+        android:onClick="onPlayButtonPressed"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintTop_toBottomOf="@+id/headlineImg"

@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="roberteriksson12.gmail.com.dragonskeep.SetupCharacterActivity">
+
+    <TextView
+        android:id="@+id/create_title"
+        android:textSize="28sp"
+        android:text="@string/create_your_character"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <ImageView
+        android:id="@+id/character_view"
+        android:src="@drawable/wizard"
+        android:layout_marginTop="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/create_title"/>
+
+    <Button
+        android:id="@+id/warrior_button"
+        android:text="@string/warrior"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/character_view"
+        app:layout_constraintRight_toLeftOf="@+id/wizars_button"/>
+
+    <Button
+        android:id="@+id/wizars_button"
+        android:text="@string/wizard"
+        android:layout_marginTop="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toRightOf="@+id/warrior_button"
+        app:layout_constraintTop_toBottomOf="@+id/character_view"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    <EditText
+        android:id="@+id/name_field"
+        android:hint="@string/write_your_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/random_name"
+        app:layout_constraintTop_toBottomOf="@+id/warrior_button"/>
+
+    <Button
+        android:id="@+id/random_name"
+        android:text="@string/randomize"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:layout_constraintLeft_toRightOf="@+id/name_field"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/warrior_button"/>
+
+    <TextView
+        android:id="@+id/str_title"
+        android:text="@string/strength"
+        android:textSize="20sp"
+        android:layout_marginTop="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintRight_toRightOf="@+id/warrior_button"
+        app:layout_constraintTop_toBottomOf="@+id/random_name"/>
+
+    <TextView
+        android:id="@+id/str_view"
+        android:text="0"
+        android:textSize="28sp"
+        android:textAlignment="center"
+        android:layout_marginTop="8dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        app:layout_constraintLeft_toRightOf="@+id/str_title"
+        app:layout_constraintTop_toBottomOf="@+id/random_name"
+        app:layout_constraintRight_toLeftOf="@+id/str_plus"/>
+
+    <Button
+        android:id="@+id/str_plus"
+        android:text="+"
+        android:textSize="28dp"
+        android:padding="0dp"
+        android:layout_width="44dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        app:layout_constraintLeft_toRightOf="@+id/str_view"
+        app:layout_constraintRight_toLeftOf="@+id/str_minus"
+        app:layout_constraintTop_toBottomOf="@+id/random_name"/>
+
+    <Button
+        android:id="@+id/str_minus"
+        android:text="-"
+        android:textSize="28sp"
+        android:padding="0dp"
+        android:layout_width="44dp"
+        android:layout_marginTop="4dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/str_plus"
+        app:layout_constraintTop_toBottomOf="@+id/random_name"/>
+
+    <TextView
+        android:id="@+id/int_title"
+        android:text="@string/intelligence"
+        android:textSize="20sp"
+        android:layout_marginTop="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintRight_toRightOf="@+id/warrior_button"
+        app:layout_constraintTop_toBottomOf="@+id/str_plus"/>
+
+    <TextView
+        android:id="@+id/int_view"
+        android:text="0"
+        android:textSize="28sp"
+        android:textAlignment="center"
+        android:layout_marginTop="8dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        app:layout_constraintLeft_toRightOf="@+id/int_title"
+        app:layout_constraintTop_toBottomOf="@+id/str_plus"
+        app:layout_constraintRight_toLeftOf="@+id/int_plus"/>
+
+    <Button
+        android:id="@+id/int_plus"
+        android:text="+"
+        android:textSize="28dp"
+        android:padding="0dp"
+        android:layout_width="44dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        app:layout_constraintLeft_toRightOf="@+id/int_view"
+        app:layout_constraintRight_toLeftOf="@+id/int_minus"
+        app:layout_constraintTop_toBottomOf="@+id/str_plus"/>
+
+    <Button
+        android:id="@+id/int_minus"
+        android:text="-"
+        android:textSize="28sp"
+        android:padding="0dp"
+        android:layout_width="44dp"
+        android:layout_marginTop="4dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/int_plus"
+        app:layout_constraintTop_toBottomOf="@+id/str_plus"/>
+
+    <TextView
+        android:id="@+id/vit_title"
+        android:text="@string/vitality"
+        android:textSize="20sp"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintRight_toRightOf="@+id/warrior_button"
+        app:layout_constraintTop_toBottomOf="@+id/int_plus"/>
+
+    <TextView
+        android:id="@+id/vit_view"
+        android:text="0"
+        android:textSize="28sp"
+        android:textAlignment="center"
+        android:layout_marginTop="8dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        app:layout_constraintLeft_toRightOf="@+id/vit_title"
+        app:layout_constraintTop_toBottomOf="@+id/int_plus"
+        app:layout_constraintRight_toLeftOf="@+id/vit_plus"/>
+
+    <Button
+        android:id="@+id/vit_plus"
+        android:text="+"
+        android:textSize="28dp"
+        android:padding="0dp"
+        android:layout_width="44dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        app:layout_constraintLeft_toRightOf="@+id/vit_view"
+        app:layout_constraintRight_toLeftOf="@+id/vit_minus"
+        app:layout_constraintTop_toBottomOf="@+id/int_plus"/>
+
+    <Button
+        android:id="@+id/vit_minus"
+        android:text="-"
+        android:textSize="28sp"
+        android:padding="0dp"
+        android:layout_width="44dp"
+        android:layout_marginTop="4dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/vit_plus"
+        app:layout_constraintTop_toBottomOf="@+id/int_plus"/>
+
+    <TextView
+        android:id="@+id/tough_title"
+        android:text="@string/toughness"
+        android:textSize="20sp"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintRight_toRightOf="@+id/warrior_button"
+        app:layout_constraintTop_toBottomOf="@+id/vit_plus"/>
+
+    <TextView
+        android:id="@+id/tough_view"
+        android:text="0"
+        android:textSize="28sp"
+        android:textAlignment="center"
+        android:layout_marginTop="8dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        app:layout_constraintLeft_toRightOf="@+id/tough_title"
+        app:layout_constraintTop_toBottomOf="@+id/vit_plus"
+        app:layout_constraintRight_toLeftOf="@+id/tough_plus"/>
+
+    <Button
+        android:id="@+id/tough_plus"
+        android:text="+"
+        android:textSize="28dp"
+        android:padding="0dp"
+        android:layout_width="44dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        app:layout_constraintLeft_toRightOf="@+id/tough_view"
+        app:layout_constraintRight_toLeftOf="@+id/tough_minus"
+        app:layout_constraintTop_toBottomOf="@+id/vit_plus"/>
+
+    <Button
+        android:id="@+id/tough_minus"
+        android:text="-"
+        android:textSize="28sp"
+        android:padding="0dp"
+        android:layout_width="44dp"
+        android:layout_marginTop="4dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/tough_plus"
+        app:layout_constraintTop_toBottomOf="@+id/vit_plus"/>
+</android.support.constraint.ConstraintLayout>

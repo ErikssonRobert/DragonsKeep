@@ -4,4 +4,13 @@
     <string name="optionsBtn">Options</string>
     <string name="exitBtn">exit</string>
     <string name="headlineText">Dragons keep</string>
+    <string name="create_your_character">Create your character</string>
+    <string name="warrior">Warrior</string>
+    <string name="wizard">Wizard</string>
+    <string name="randomize">Randomize</string>
+    <string name="write_your_name">Write your name</string>
+    <string name="strength">Strength:</string>
+    <string name="intelligence">Intelligence:</string>
+    <string name="vitality">Vitality:</string>
+    <string name="toughness">Toughness:</string>
 </resources>
